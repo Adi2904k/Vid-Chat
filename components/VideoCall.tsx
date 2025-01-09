@@ -4,7 +4,6 @@ import { useSocket } from "@/context/SocketContext";
 import VideoContainer from "./VideoContainer";
 import { useCallback, useEffect, useState } from "react";
 import { MdMic, MdMicOff, MdVideocam, MdVideocamOff } from "react-icons/md";
-import { on } from "events";
 
 const VideoCall = () => {
     const {localStream,peer,isCallEnded, ongoingCall,handleHangup} = useSocket()
